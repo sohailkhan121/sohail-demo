@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JS Program to add 2 Numbers</h2>
+    <input type="textbox" placeholder="Enter 1st Num" id="num1">
+    <input type="textbox" placeholder="Enter 2nd Num" id="num2">
+    <button onclick="add()">Add</button>
+    <p id="result"></p>
+
+    <script>
+        function add(){
+            let num1 = parseFloat(document.getElementById('num1').value)
+            let num2 = parseFloat(document.getElementById('num2').value)
+            let result = num1 + num2
+            document.getElementById('result') .innerHTML= result
+        }
+    </script>
+</body>
+</html>
